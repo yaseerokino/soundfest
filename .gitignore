@@ -5,6 +5,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+#my-env
+.hintrc
+.prettierrc.json
+.prettierignore
+.stylelintrc.json
+.eslintrc.json
+
 # Runtime data
 pids
 *.pid

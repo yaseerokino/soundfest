@@ -1,0 +1,130 @@
+.about {
+  text-align: center;
+  h3 {
+    color: $primary-100;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin-top: 16px;
+    font-weight: $bolder;
+    font-family: $font-stack-secondary;
+    color: $primary-100;
+    text-transform: uppercase;
+  }
+
+  .about-box {
+    background-color: white;
+    margin-top: 16px;
+    padding: 1rem;
+    border: 2px solid $neutral-50;
+    @media (min-width: $breakpoint-tablet) {
+      margin: 16px 50px;
+    }
+  }
+
+  .about-contact {
+    margin: 16px 25px;
+  }
+
+  a {
+    color: $secondary-100;
+    text-decoration: underline;
+    font-weight: $bold;
+    &:hover {
+      color: $primary-100;
+    }
+  }
+}
+
+.logo-about {
+  text-align: center;
+  background-color: $neutral-0;
+  border-bottom: 1px solid $neutral-100;
+
+  .logo-about-p {
+    margin-top: 16px;
+  }
+
+  .logo-container {
+    margin-top: 16px;
+    display: flex;
+    border: 1px solid $neutral-100;
+    width: 100%;
+    justify-content: center;
+    padding: 40px 0;
+
+    .logo-container-span {
+      font-size: 40px;
+    }
+
+    .logo-container-h1 {
+      font-size: 40px;
+      font-family: $font-stack-secondary;
+      font-weight: $bolder;
+      color: $primary-100;
+
+      span {
+        color: $secondary-100;
+      }
+    }
+  }
+}
+
+.past-about {
+  text-align: center;
+  background-color: $neutral-0;
+
+  .past-about-p {
+    margin-top: 16px;
+  }
+
+  .past-about-ul {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .past-about-li {
+      width: 100%;
+      height: auto;
+      color: $neutral-0;
+      margin: 14px 0;
+      padding: 50px 30px;
+      background-attachment: fixed;
+
+      @media (min-width: $breakpoint-tablet) {
+        flex: 1;
+        margin: 16px;
+      }
+
+      .past-about-li-h2 {
+        font-weight: $bolder;
+        font-family: $font-stack-secondary;
+      }
+
+      .past-about-li-p {
+        font-family: $font-stack-secondary;
+        font-weight: $regular;
+      }
+    }
+
+    .past-about-li:nth-child(1) {
+      background-image: linear-gradient(
+          rgba($primary-100, 0.7),
+          rgba($primary-100, 0.7)
+        ),
+        url(../../../assets/png/concert2.jpg);
+      background-size: cover;
+    }
+
+    .past-about-li:nth-child(2) {
+      background-image: linear-gradient(
+          rgba($primary-100, 0.6),
+          rgba($primary-100, 0.6)
+        ),
+        url(../../../assets/png/concert2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

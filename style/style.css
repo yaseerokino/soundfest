@@ -235,12 +235,19 @@ a {
   width: 10%;
 }
 
-.primary-nav .container-header > nav {
+.primary-nav .nav {
   display: flex;
   justify-content: space-between;
 }
-.primary-nav .container-header > nav .primary-nav-btn {
+.primary-nav .nav .nav-btn {
   font-size: calc(16px * 2);
+}
+.primary-nav .nav .nav-ul {
+  display: none;
+}
+
+.secondary-nav {
+  display: none;
 }
 
 .container {

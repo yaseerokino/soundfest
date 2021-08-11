@@ -1,10 +1,18 @@
 .primary-nav {
-  .container-header > nav {
+  .nav {
     display: flex;
     justify-content: space-between;
 
-    .primary-nav-btn {
+    .nav-btn {
       font-size: $spacing-2;
     }
+
+    .nav-ul {
+      display: none;
+    }
   }
+}
+
+.secondary-nav {
+  display: none;
 }

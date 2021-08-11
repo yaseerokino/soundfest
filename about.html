@@ -16,27 +16,25 @@
   <body>
     <header>
       <div class="secondary-nav">
-        <div class="container-header">
-          <nav class="nav-sec">
-            <ul class="nav-sec-ul">
-              <li class="nav-sec-li">
-                <a href="#">facebook</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-              <li>
-                <a href="#">English</a>
-              </li>
-              <li>
-                <a href="#">My Page</a>
-              </li>
-              <li>
-                <a href="#">Logout</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="nav-sec">
+          <ul class="nav-sec-ul">
+            <li class="nav-sec-li">
+              <a class="nav-sec-a" href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="nav-sec-li">
+              <a class="nav-sec-a" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-sec-li">
+              <a class="nav-sec-a" href="#">English</a>
+            </li>
+            <li class="nav-sec-li">
+              <a class="nav-sec-a" href="#">My Page</a>
+            </li>
+            <li class="nav-sec-li">
+              <a class="nav-sec-a" href="#">Logout</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <div class="primary-nav">
@@ -46,7 +44,7 @@
             <h1 class="logo-container-h1">SOUND<span>FEST</span></h1>
           </div>
           <nav class="nav">
-            <button class="nav-btn btn-icon-light">
+            <button id="open-menu" class="nav-btn btn-icon-light">
               <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-ul">
@@ -60,7 +58,27 @@
           </nav>
         </div>
       </div>
-      <div class="mobile-menu"></div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container">
+          <nav class="mobile-menu-nav">
+            <button id="close-menu" class="btn-icon-dark mobile-menu-btn">
+              &times;
+            </button>
+            <ul class="mobile-menu-ul">
+              <li class="mobile-menu-li">
+                <a class="mobile-menu-a" onclick="closeMenu()" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mobile-menu-li">
+                <a class="mobile-menu-a" onclick="closeMenu()" href="about.html"
+                  >About
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
       <section class="about">
@@ -162,5 +180,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

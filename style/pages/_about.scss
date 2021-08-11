@@ -56,6 +56,21 @@
     width: 100%;
     justify-content: center;
     padding: $spacing-2 0;
+
+    .logo-container-span {
+      font-size: 40px;
+    }
+
+    .logo-container-h1 {
+      font-size: 40px;
+      font-family: $font-stack-secondary;
+      font-weight: $bolder;
+      color: $primary-100;
+
+      span {
+        color: $secondary-100;
+      }
+    }
   }
 }
 

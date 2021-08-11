@@ -129,6 +129,14 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  color: #272a31;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
 h1 {
   font-family: "Lato", sans-serif;
   font-size: 48px;
@@ -157,4 +165,12 @@ p {
 a {
   text-decoration: none;
   font-family: "Lato", sans-serif;
+}
+
+.container {
+  padding: calc(16px * 2) calc(16px * 6);
+}
+
+.container-header {
+  padding: calc(16px * 2);
 }/*# sourceMappingURL=style.css.map */

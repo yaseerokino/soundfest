@@ -356,11 +356,11 @@ footer .container > * {
 .about {
   text-align: center;
 }
-.about h3 {
+.about .about-h3 {
   color: #ec5242;
   text-transform: uppercase;
 }
-.about h1 {
+.about .about-h1 {
   margin-top: 16px;
   font-weight: 800;
   font-family: "Raleway", sans-serif;
@@ -381,12 +381,12 @@ footer .container > * {
 .about .about-contact {
   margin: 16px 25px;
 }
-.about a {
+.about .about-contact-a {
   color: #272a31;
   text-decoration: underline;
   font-weight: 700;
 }
-.about a:hover {
+.about .about-contact-a:hover {
   color: #ec5242;
 }
 

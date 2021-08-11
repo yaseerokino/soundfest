@@ -1,0 +1,10 @@
+.primary-nav {
+  .container-header > nav {
+    display: flex;
+    justify-content: space-between;
+
+    .primary-nav-btn {
+      font-size: $spacing-2;
+    }
+  }
+}

@@ -167,10 +167,85 @@ a {
   font-family: "Lato", sans-serif;
 }
 
+.btn {
+  padding: 30px 50px;
+  letter-spacing: 2px;
+  border: 1px solid #ec5242;
+  color: #e9e9e9;
+  background-color: #ec5242;
+  transition: all 0.4s ease 0s;
+}
+.btn:hover {
+  color: #ec5242;
+  background-color: #272a31;
+  border: 1px solid #272a31;
+  letter-spacing: 1px;
+  box-shadow: 5px 40px -10px rgba(39, 42, 49, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.btn-border {
+  padding: 15px 30px;
+  border: 1px solid #272a31;
+  color: #272a31;
+}
+.btn-border:hover {
+  color: #ec5242;
+  border: 1px solid #ec5242;
+  letter-spacing: 1px;
+  box-shadow: 5px 40px -10px rgba(236, 82, 66, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.btn-icon-light {
+  background-color: transparent;
+  border: none;
+  color: #272a31;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+.btn-icon-light:hover {
+  color: #ec5242;
+  transition: all 0.4s ease 0s;
+}
+
+.btn-icon-dark {
+  background-color: transparent;
+  border: none;
+  color: #e9e9e9;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+.btn-icon-dark:hover {
+  color: #ec5242;
+  transition: all 0.4s ease 0s;
+}
+
+.primary-nav .container-header > nav {
+  display: flex;
+  justify-content: space-between;
+}
+.primary-nav .container-header > nav .primary-nav-btn {
+  font-size: calc(16px * 2);
+}
+
 .container {
   padding: calc(16px * 2) calc(16px * 6);
 }
 
 .container-header {
   padding: calc(16px * 2);
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .container .footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+footer .container > * {
+  padding: 16px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+footer {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .footer-logo {
+      font-family: $font-stack-secondary;
+      font-weight: $bolder;
+    }
+  }
+
+  .container > * {
+    padding: $spacing-1;
+  }
+}

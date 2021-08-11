@@ -235,6 +235,31 @@ a {
   width: 10%;
 }
 
+.primary-nav .container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.primary-nav .logo-container {
+  display: none;
+}
+.primary-nav .logo-container .logo-container-span {
+  font-size: 40px;
+}
+.primary-nav .logo-container .logo-container-h1 {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #ec5242;
+}
+.primary-nav .logo-container .logo-container-h1 span {
+  color: #272a31;
+}
+@media (min-width: 768px) {
+  .primary-nav .logo-container {
+    display: flex;
+  }
+}
 .primary-nav .nav {
   display: flex;
   justify-content: space-between;
@@ -242,20 +267,77 @@ a {
 .primary-nav .nav .nav-btn {
   font-size: calc(16px * 2);
 }
+@media (min-width: 768px) {
+  .primary-nav .nav .nav-btn {
+    display: none;
+  }
+}
 .primary-nav .nav .nav-ul {
   display: none;
+}
+.primary-nav .nav .nav-ul .nav-li {
+  margin-left: calc(16px * 2);
+}
+.primary-nav .nav .nav-ul .nav-li .nav-a {
+  color: #272a31;
+  transition: all 0.4s ease 0s;
+}
+.primary-nav .nav .nav-ul .nav-li .nav-a:hover {
+  color: #ec5242;
+  transition: all 0.4s ease 0s;
+}
+@media (min-width: 768px) {
+  .primary-nav .nav .nav-ul {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .primary-nav {
+    background-color: #fff;
+  }
 }
 
 .secondary-nav {
   display: none;
+  background-color: #272a31;
+}
+@media (min-width: 768px) {
+  .secondary-nav {
+    display: block;
+  }
+}
+.secondary-nav .nav-sec-ul {
+  justify-content: right;
+  display: flex;
+  padding: 16px;
+}
+.secondary-nav .nav-sec-ul .nav-sec-li {
+  margin-right: 16px;
+}
+.secondary-nav .nav-sec-ul .nav-sec-li .nav-sec-a {
+  color: #fff;
+}
+.secondary-nav .nav-sec-ul .nav-sec-li .nav-sec-a:hover {
+  color: #ec5242;
+  transition: all 0.4s ease 0s;
 }
 
 .container {
   padding: calc(16px * 5) calc(16px * 2);
 }
+@media (min-width: 768px) {
+  .container {
+    padding: calc(16px * 5) calc(16px * 12);
+  }
+}
 
 .container-header {
   padding: calc(16px * 2);
+}
+@media (min-width: 768px) {
+  .container-header {
+    padding: calc(16px * 2) calc(16px * 12);
+  }
 }
 
 .partners {
@@ -312,6 +394,11 @@ footer .container > * {
   padding: 1rem;
   border: 3px solid #fff;
 }
+@media (min-width: 768px) {
+  .headline .headline-box {
+    width: 60%;
+  }
+}
 .headline .headline-location {
   padding-top: 16px;
   font-size: calc($spacing-1 + 4px);
@@ -325,6 +412,12 @@ footer .container > * {
   display: block;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .highlight .highlight-ul {
+    display: flex;
+    margin-top: 16px;
+  }
+}
 .highlight .highlight-ul .highlight-li {
   display: flex;
   justify-content: space-evenly;
@@ -332,6 +425,12 @@ footer .container > * {
   background-color: rgba(233, 233, 233, 0.1);
   margin-top: 16px;
   padding: 16px;
+}
+@media (min-width: 768px) {
+  .highlight .highlight-ul .highlight-li {
+    flex-direction: column;
+    margin: 12px;
+  }
 }
 .highlight .highlight-ul .highlight-li .highlight-span {
   font-size: 40px;
@@ -341,12 +440,12 @@ footer .container > * {
 .highlight .highlight-ul .highlight-li .highlight-h3 {
   color: #ec5242 !important;
   flex: 20%;
-  text-align: end;
+  text-align: center;
   text-transform: capitalize;
 }
 .highlight .highlight-ul .highlight-li .highlight-p {
   flex: 50%;
-  text-align: end;
+  text-align: center;
 }
 .highlight .highlight-button {
   margin: 0 auto;
@@ -382,11 +481,11 @@ footer .container > * {
 }
 @media (min-width: 768px) {
   .about .about-box {
-    margin: 16px 50px;
+    margin: 16px calc(16px * 4);
   }
 }
 .about .about-contact {
-  margin: 16px 25px;
+  margin: 16px calc(16px * 2);
 }
 .about .about-contact-a {
   color: #272a31;
@@ -411,19 +510,7 @@ footer .container > * {
   border: 1px solid #d3d3d3;
   width: 100%;
   justify-content: center;
-  padding: 40px 0;
-}
-.logo-about .logo-container .logo-container-span {
-  font-size: 40px;
-}
-.logo-about .logo-container .logo-container-h1 {
-  font-size: 40px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  color: #ec5242;
-}
-.logo-about .logo-container .logo-container-h1 span {
-  color: #272a31;
+  padding: calc(16px * 2) 0;
 }
 
 .past-about {
@@ -443,7 +530,7 @@ footer .container > * {
   width: 100%;
   height: auto;
   color: #fff;
-  margin: 14px 0;
+  margin: 16px 0;
   padding: 50px 30px;
   background-attachment: fixed;
 }

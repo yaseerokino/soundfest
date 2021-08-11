@@ -21,12 +21,12 @@
     border: 2px solid $neutral-50;
 
     @media (min-width: $breakpoint-tablet) {
-      margin: 16px 50px;
+      margin: $spacing-1 $spacing-4;
     }
   }
 
   .about-contact {
-    margin: 16px 25px;
+    margin: $spacing-1 $spacing-2;
   }
 
   .about-contact-a {
@@ -46,31 +46,16 @@
   border-bottom: 1px solid $neutral-100;
 
   .logo-about-p {
-    margin-top: 16px;
+    margin-top: $spacing-1;
   }
 
   .logo-container {
-    margin-top: 16px;
+    margin-top: $spacing-1;
     display: flex;
     border: 1px solid $neutral-100;
     width: 100%;
     justify-content: center;
-    padding: 40px 0;
-
-    .logo-container-span {
-      font-size: 40px;
-    }
-
-    .logo-container-h1 {
-      font-size: 40px;
-      font-family: $font-stack-secondary;
-      font-weight: $bolder;
-      color: $primary-100;
-
-      span {
-        color: $secondary-100;
-      }
-    }
+    padding: $spacing-2 0;
   }
 }
 
@@ -79,11 +64,11 @@
   background-color: $neutral-0;
 
   .past-about-p {
-    margin-top: 16px;
+    margin-top: $spacing-1;
   }
 
   .past-about-ul {
-    margin-top: 16px;
+    margin-top: $spacing-1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,7 +77,7 @@
       width: 100%;
       height: auto;
       color: $neutral-0;
-      margin: 14px 0;
+      margin: $spacing-1 0;
       padding: 50px 30px;
       background-attachment: fixed;
 

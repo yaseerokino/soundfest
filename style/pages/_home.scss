@@ -20,6 +20,10 @@
     margin-top: 16px;
     padding: 1rem;
     border: 3px solid $neutral-0;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 60%;
+    }
   }
 
   .headline-location {
@@ -37,6 +41,11 @@
   text-align: center;
 
   .highlight-ul {
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      margin-top: 16px;
+    }
+
     .highlight-li {
       display: flex;
       justify-content: space-evenly;
@@ -44,6 +53,11 @@
       background-color: rgb($neutral-50, 0.1);
       margin-top: $spacing-1;
       padding: $spacing-1;
+
+      @media (min-width: $breakpoint-tablet) {
+        flex-direction: column;
+        margin: 12px;
+      }
 
       .highlight-span {
         font-size: 40px;
@@ -54,13 +68,13 @@
       .highlight-h3 {
         color: $primary-100 !important;
         flex: 20%;
-        text-align: end;
+        text-align: center;
         text-transform: capitalize;
       }
 
       .highlight-p {
         flex: 50%;
-        text-align: end;
+        text-align: center;
       }
     }
   }

@@ -1,18 +1,97 @@
 .primary-nav {
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container {
+    display: none;
+
+    .logo-container-span {
+      font-size: 40px;
+    }
+
+    .logo-container-h1 {
+      font-size: 40px;
+      font-family: $font-stack-secondary;
+      font-weight: $bolder;
+      color: $primary-100;
+
+      span {
+        color: $secondary-100;
+      }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+    }
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
 
     .nav-btn {
       font-size: $spacing-2;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
     }
 
     .nav-ul {
       display: none;
+
+      .nav-li {
+        margin-left: $spacing-2;
+
+        .nav-a {
+          color: $secondary-100;
+          transition: all 0.4s ease 0s;
+
+          &:hover {
+            color: $primary-100;
+            transition: all 0.4s ease 0s;
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-tablet) {
+        display: flex;
+      }
     }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    background-color: $neutral-0;
   }
 }
 
 .secondary-nav {
   display: none;
+  background-color: $secondary-100;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+  }
+
+  .nav-sec-ul {
+    justify-content: right;
+    display: flex;
+    padding: $spacing-1;
+
+    .nav-sec-li {
+      margin-right: $spacing-1;
+
+      .nav-sec-a {
+        color: $neutral-0;
+
+        &:hover {
+          color: $primary-100;
+          transition: all 0.4s ease 0s;
+        }
+      }
+    }
+  }
 }

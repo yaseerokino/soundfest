@@ -58,11 +58,11 @@
     padding: $spacing-2 0;
 
     .logo-container-span {
-      font-size: 40px;
+      font-size: 3em;
     }
 
     .logo-container-h1 {
-      font-size: 40px;
+      font-size: 3em;
       font-family: $font-stack-secondary;
       font-weight: $bolder;
       color: $primary-100;
@@ -113,8 +113,7 @@
     }
 
     .past-about-li:nth-child(1) {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           rgba($primary-100, 0.7),
           rgba($primary-100, 0.7)
         ),
@@ -123,8 +122,7 @@
     }
 
     .past-about-li:nth-child(2) {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           rgba($primary-100, 0.6),
           rgba($primary-100, 0.6)
         ),

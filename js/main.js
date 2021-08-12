@@ -14,55 +14,42 @@ const artists = [
   {
     name: 'Kendrick Lamar',
     role: 'Headline Artist',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
-    imageSrc: 'assets/jpg/kendrick.jpg',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
+    image: 'assets/jpg/kendrick.jpg',
   },
   {
     name: 'Rihanna',
     role: 'Headline Artist',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
-    imageSrc: 'assets/jpg/rihanna.jpg',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
+    image: 'assets/jpg/rihanna.jpg',
   },
   {
     name: 'Skepta',
     role: 'Headline Artist',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
-    imageSrc: 'assets/jpg/skepta.jpg',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
+    image: 'assets/jpg/skepta.jpg',
   },
   {
     name: 'Santino Le Saint',
     role: 'Support Artist',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
-    imageSrc: 'assets/jpg/santino.jpg',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
+    image: 'assets/jpg/santino.jpg',
   },
   {
     name: 'Mustapha the Poet',
     role: 'Support Artist',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
-    imageSrc: 'assets/jpg/mustapha.jpg',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
+    image: 'assets/jpg/mustapha.jpg',
   },
   {
     name: 'Unknown T',
     role: 'Support Artist',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
-    imageSrc: 'assets/jpg/unknownt.jpg',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod',
+    image: 'assets/jpg/unknownt.jpg',
   },
 ];
 
-const artistsArray = artists.map((a) => ({
-  name: a.name,
-  role: a.role,
-  desc: a.description,
-  image: a.imageSrc,
-}));
-
-artistsArray.forEach((element) => {
+artists.forEach((element) => {
   const li = document.createElement('li');
   const img = document.createElement('img');
   const div = document.createElement('div');

@@ -25,10 +25,11 @@
 }
 
 footer {
-  .container {
+  .container-footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: $spacing-4 $spacing-1;
 
     .footer-logo {
       font-family: $font-stack-secondary;
@@ -36,7 +37,7 @@ footer {
     }
   }
 
-  .container > * {
-    padding: $spacing-1;
+  .container-footer > * {
+    padding-left: $spacing-2;
   }
 }

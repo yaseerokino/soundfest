@@ -1,4 +1,19 @@
 .headline {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(246, 246, 246, 0.9) 0%,
+      rgba(246, 246, 246, 1) 30%
+    ),
+    url('../../assets/png/concert2.jpg');
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 85vh;
+  }
+
   .headline-h1 {
     margin-top: 16px;
     font-weight: $bolder;
@@ -22,13 +37,13 @@
     border: 3px solid $neutral-0;
 
     @media (min-width: $breakpoint-tablet) {
-      width: 60%;
+      width: 70%;
     }
   }
 
   .headline-location {
     padding-top: $spacing-1;
-    font-size: calc($spacing-1 + 4px);
+    font-size: 20px;
     font-weight: $bold;
   }
 }

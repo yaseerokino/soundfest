@@ -55,13 +55,14 @@
     border: 1px solid $neutral-100;
     width: 100%;
     justify-content: center;
-    padding: $spacing-2 $spacing-4;
+    padding: $spacing-2 0;
 
     .logo-container-span {
       font-size: 40px;
     }
 
     .logo-container-h1 {
+      font-size: 40px;
       font-family: $font-stack-secondary;
       font-weight: $bolder;
       color: $primary-100;

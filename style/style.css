@@ -713,7 +713,7 @@ footer .container-footer > * {
   border: 1px solid #d3d3d3;
   width: 100%;
   justify-content: center;
-  padding: calc(16px * 2) calc(16px * 4);
+  padding: calc(16px * 2) 0;
 }
 
 .logo-about .logo-container .logo-container-span {
@@ -721,6 +721,7 @@ footer .container-footer > * {
 }
 
 .logo-about .logo-container .logo-container-h1 {
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: #ec5242;

@@ -1,4 +1,6 @@
 .primary-nav {
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.09);
+
   .container-header {
     display: flex;
     justify-content: space-between;
@@ -77,12 +79,11 @@
   }
 
   .nav-sec-ul {
-    justify-content: right;
+    justify-content: flex-end;
     display: flex;
-    padding: $spacing-1;
 
     .nav-sec-li {
-      margin-right: $spacing-1;
+      margin-left: $spacing-1;
 
       .nav-sec-a {
         color: $neutral-0;

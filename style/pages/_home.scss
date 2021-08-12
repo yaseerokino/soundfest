@@ -93,4 +93,63 @@
   .artists-p {
     text-align: center;
   }
+
+  .artists-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $font-stack-primary;
+    margin-top: $spacing-3;
+
+    .artist-li {
+      display: flex;
+      position: relative;
+      margin: 0 $spacing-2 $spacing-2 $spacing-1;
+
+      .artist-img {
+        width: 120px;
+        position: relative;
+        object-fit: contain;
+        margin-right: $spacing-1;
+        transition: all 0.4s ease 0s;
+
+        &:hover {
+          margin-left: $spacing-1;
+          transition: all 0.4s ease 0s;
+        }
+      }
+
+      .artist-h4 {
+        font-weight: $bold;
+      }
+
+      .artist-h5 {
+        color: $primary-100;
+        font-style: italic;
+        font-weight: $regular;
+        margin-top: 10px;
+        font-size: small;
+      }
+
+      .artist-h6 {
+        font-weight: $regular;
+        margin-top: 10px;
+        font-size: smaller;
+        line-height: 1.2;
+        color: $secondary-80;
+      }
+    }
+
+    .artist-li::before {
+      content: ' ';
+      background-image: url(../../assets/svg/check.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -10px;
+      left: -15px;
+    }
+  }
 }

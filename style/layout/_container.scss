@@ -1,0 +1,21 @@
+.container {
+  padding: $spacing-5 $spacing-2;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-5 $spacing-12;
+  }
+}
+
+.container-header {
+  padding: $spacing-2;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-2 $spacing-12;
+  }
+}
+
+.container-sec-header {
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-1 $spacing-12;
+  }
+}

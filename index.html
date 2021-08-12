@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soundfest 2021</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="secondary-nav">
+        <div class="container-sec-header">
+          <nav class="nav-sec">
+            <ul class="nav-sec-ul">
+              <li class="nav-sec-li">
+                <a class="nav-sec-a" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li class="nav-sec-li">
+                <a class="nav-sec-a" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-sec-li">
+                <a class="nav-sec-a" href="#">English</a>
+              </li>
+              <li class="nav-sec-li">
+                <a class="nav-sec-a" href="#">My Page</a>
+              </li>
+              <li class="nav-sec-li">
+                <a class="nav-sec-a" href="#">Logout</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="primary-nav">
+        <div class="container-header">
+          <div class="logo-container">
+            <span class="fas fa-compact-disc logo-container-span"></span>
+            <h1 class="logo-container-h1">SOUND<span>FEST</span></h1>
+          </div>
+          <nav class="nav">
+            <button type="button" id="open-menu" class="nav-btn btn-icon-light">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul">
+              <li class="nav-li">
+                <a class="nav-a" href="index.html">Home</a>
+              </li>
+              <li class="nav-li">
+                <a class="nav-a" href="about.html">About </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container">
+          <nav class="mobile-menu-nav">
+            <button
+              type="button"
+              id="close-menu"
+              class="btn-icon-dark mobile-menu-btn"
+            >
+              &times;
+            </button>
+            <ul class="mobile-menu-ul">
+              <li class="mobile-menu-li">
+                <a class="mobile-menu-a" onclick="closeMenu()" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mobile-menu-li">
+                <a class="mobile-menu-a" onclick="closeMenu()" href="about.html"
+                  >About
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="headline">
+        <div class="container">
+          <h3 class="headline-h3">"Hello! Audiophiles"</h3>
+          <h1 class="headline-h1">Soundfest Music Festival 2020</h1>
+          <div class="headline-box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore e
+            </p>
+          </div>
+          <h2 class="headline-h2">2020.12.29 - 2020.12.31</h2>
+          <p class="headline-location">
+            @ Mercedes Benz Stadium, Atlanta Georgia
+          </p>
+        </div>
+      </section>
+      <section class="highlight">
+        <div class="container">
+          <h2>Event Highlights</h2>
+          <hr class="hr-primary" />
+          <ul class="highlight-ul">
+            <li class="highlight-li">
+              <span class="highlight-span"
+                ><i class="fas fa-calendar-alt"></i
+              ></span>
+              <h3 class="highlight-h3">3 Days Festival</h3>
+              <p class="highlight-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </li>
+            <li class="highlight-li">
+              <span class="highlight-span"
+                ><i class="fas fa-drum-steelpan"></i
+              ></span>
+              <h3 class="highlight-h3">5 Stages</h3>
+              <p class="highlight-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </li>
+            <li class="highlight-li">
+              <span class="highlight-span"
+                ><i class="fas fa-microphone-alt"></i
+              ></span>
+              <h3 class="highlight-h3">20 Artists</h3>
+              <p class="highlight-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </li>
+            <li class="highlight-li">
+              <span class="highlight-span"><i class="fas fa-video"></i></span>
+              <h3 class="highlight-h3">Video Stream</h3>
+              <p class="highlight-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="btn highlight-button">
+            BUY SOUNDFEST TICKET
+          </button>
+        </div>
+      </section>
+      <section class="artists">
+        <div class="container">
+          <h2 class="artists-h2">Artist Line-Up</h2>
+          <hr class="hr-primary" />
+          <p class="artists-p">5 headliners, 15 support artists</p>
+          <ul class="artists-ul"></ul>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners-h2">Partners</h2>
+          <hr class="hr-primary" />
+          <ul class="partners-ul">
+            <li class="partners-li">
+              <img class="partners-li-img" src="assets/svg/bet.svg" alt="" />
+            </li>
+            <li class="partners-li">
+              <img
+                class="partners-li-img"
+                src="assets/svg/billboard.svg"
+                alt=""
+              />
+            </li>
+            <li class="partners-li">
+              <img class="partners-li-img" src="assets/svg/sony.svg" alt="" />
+            </li>
+            <li class="partners-li">
+              <img
+                class="partners-li-img"
+                src="assets/svg/applemusic.svg"
+                alt=""
+              />
+            </li>
+            <li class="partners-li">
+              <img class="partners-li-img" src="assets/svg/mtv.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <h1 class="footer-logo"><span class="fas fa-compact-disc"></span>SF</h1>
+        <p>
+          2021 Soundfest Music Festival. <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

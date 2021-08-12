@@ -47,6 +47,10 @@ git clone https://github.com/yaseerokino/soundfest.git
 
 Give a ⭐️ if you like this project!
 
+## 📝 Acknowledgment
+
+Thanks to [Cindy Shin](https://www.behance.net/adagio07) for providing the original [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) idea
+
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.

@@ -1,0 +1,43 @@
+.partners {
+  background-color: $secondary-100;
+
+  .partners-h2 {
+    text-align: center;
+    color: $neutral-10;
+  }
+
+  .partners-ul {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .partners-li {
+      padding: 16px;
+      color: $neutral-50;
+
+      .partners-li-img {
+        height: 40px;
+        width: auto;
+      }
+    }
+  }
+}
+
+footer {
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: $spacing-4 $spacing-1;
+
+    .footer-logo {
+      font-family: $font-stack-secondary;
+      font-weight: $bolder;
+    }
+  }
+
+  .container-footer > * {
+    padding-left: $spacing-2;
+  }
+}

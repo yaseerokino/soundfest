@@ -1,0 +1,31 @@
+h1 {
+  font-family: $font-stack-primary;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $font-stack-primary;
+  font-size: 32px;
+  font-weight: $regular;
+  line-height: 1.3;
+}
+
+h3 {
+  font-family: $font-stack-primary;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: $regular;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $font-stack-primary;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font-stack-primary;
+}
